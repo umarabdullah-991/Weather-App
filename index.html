@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App | Check Your Location Current Weather</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div>
-        <section>
-            <header>Check your City Weather</header>
-            <p><input type="text" placeholder="Enter City Name" spellcheck="true" required ></p>
-            <div class="separator"></div>
-            <button>Get Device Location</button>
-        </section>
+      <section>
+        <header>Check your City Weather</header>
+        <p>
+          <input
+            type="text"
+            placeholder="Enter City Name"
+            spellcheck="true"
+            required
+          />
+        </p>
+        <div class="separator"></div>
+        <button>Get Device Location</button>
+      </section>
 
-        <section>
-            <img src="" alt=""/>
+      <section>
+        <img src="" alt="" />
+        <div class="">
+          <span></span>
+          <span class="">°</span>C
+        </div>
+        <div class=""></div>
+        <div class="">
+          <i></i>
+          <span></span>
+        </div>
+        <div>
+          <div class="col feels"></div>
+          <div class="col humidity">
+            <i class=""></i>
+            <div class="detail">
+              <div class="detail">
+                <span class=""></span>
+                <span class="">°</span>C]
+              </div>
+              <p>feels like</p>
+            </div>
+          </div>
+          <div class="">
+            <i class=""></i>
             <div class="">
-                <span></span>
-                <span class="">°</span>C
+              <span class=""></span>
+              <p>humidity</p>
             </div>
-            <div class=""></div>
-            <div class="">
-                <i></i>
-                <span></span>
-            </div>
-            <div>
-                <div class="col feels">
-
-
-                </div>
-                <div class="col humidity"></div>
-            </div>
-        </section>
-
-
+          </div>
+        </div>
+      </section>
     </div>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
