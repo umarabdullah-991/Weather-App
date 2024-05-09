@@ -20,3 +20,38 @@ body{
     min-height: 90vh;
     background-image: url(images/cloud.jpg);
 }
+.wrapper{
+    width: 35%;
+    background: #fff;
+    border-radius: 1rem;
+}
+.wrapper header{
+    color: #43affc;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 1.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bfbfbf;
+}
+.header i{
+    cursor: pointer;
+    font-size: 2rem;
+    margin: .8rem;
+    /* color:#43affc;
+    display: flex;
+    align-items: center;
+    font-weight: 800; */
+}
+/* .wrapper.active header i{
+    font-size: 3rem;
+    margin: .5rem;
+}
+.wrapper.active .input-part{
+    font-size: 3rem;
+    margin: .5rem;
+} */
+.wrapper .input-part{
+    /* display: none; */
+    margin: 2rem 2.5rem 3rem;
+}
