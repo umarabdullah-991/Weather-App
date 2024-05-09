@@ -1,5 +1,5 @@
 //private key
-var apikey = "758ea5a75e8983d8ae28440c59ebd530";
+var apiKey = '758ea5a75e8983d8ae28440c59ebd530';
 var api;
 
 const wrapper = document.querySelector(".wrapper"),
@@ -62,7 +62,7 @@ function weatherDetails(info) {
     if (id == 800) {
       weatherIcon.src = "images/clear.svg";
     } else if (id >= 200 && id <= 232) {
-      weatherIcon.src = "images/strome.svg";
+      weatherIcon.src = "images/storm.svg";
     } else if (id >= 600 && id <= 622) {
       weatherIcon.src = "images/snow-2.svg";
     } else if (id >= 701 && id <= 781) {
