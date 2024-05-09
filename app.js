@@ -11,9 +11,9 @@ const wrapper = document.querySelector(".wrapper"),
   arrowBack = wrapper.querySelector("header i");
 
 inputField.addEventListener("keyup", (e) => {
-  //if useer pressed enter button and input value is not empty
+  //if user pressed enter button and input value is not empty
   if (e.key == "Enter" && inputField.value != "") {
-    resquestApi(inputField.value);
+    requestApi(inputField.value);
   }
 });
 
@@ -74,7 +74,7 @@ function weatherDetails(info) {
     }
 
     //let's pass these values to a particular html element
-    wrapper.querySelector(".temp .numb").innerTxt = Math.floor(temo);
+    wrapper.querySelector(".temp .numb").innerTxt = Math.floor(temp);
     wrapper.querySelector(".weather").innerTxt = description;
     wrapper.querySelector(".location span").innerTxt = "${city}, ${country}";
     wrapper.querySelector(".temp .numb-2").innerTxt = feels_like;
