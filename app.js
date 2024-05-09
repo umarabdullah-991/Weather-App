@@ -41,7 +41,7 @@ function requestApi(city) {
   fetchData();
 }
 function fetchData() {
-  infoTxt.innerTxt = "Getting weather details...";
+  infoTxt.innerText = "Getting weather details...";
   infoTxt.classList.add("pending");
   //getting api response returning it with parsing into js obj and in another
   //then function calling weatherDetails function with passing api result as an argument.
@@ -49,7 +49,7 @@ function fetchData() {
 }
 function weatherDetails(info) {
   if (info.cod == "404") {
-    infoTxt.innerTxt = `${inputField.value} invalid city name`;
+    infoTxt.innerText = `${inputField.value} invalid city name`;
     infoTxt.classList.replace("pending", "error");
   } else {
     //lets get properties value from the info object
@@ -72,11 +72,11 @@ function weatherDetails(info) {
     }
 
     //let's pass these values to a particular html element
-    wrapper.querySelector(".temp .numb").innerTxt = Math.floor(temp);
-    wrapper.querySelector(".weather").innerTxt = description;
-    wrapper.querySelector(".location span").innerTxt = `${city}, ${country}`;
-    wrapper.querySelector(".temp .numb-2").innerTxt = feels_like;
-    wrapper.querySelector(".humidity span").innerTxt = `${humidity}%`;
+    wrapper.querySelector(".temp .numb").innerText = Math.floor(temp);
+    wrapper.querySelector(".weather").innerText = description;
+    wrapper.querySelector(".location span").innerText = `${city}, ${country}`;
+    wrapper.querySelector(".temp .numb-2").innerText = feels_like;
+    wrapper.querySelector(".humidity span").innerText = `${humidity}%`;
     infoTxt.classList.remove("pending", "error");
     wrapper.classList.add("active");
     console.log(info);
