@@ -13,50 +13,50 @@
   </head>
   <body>
     <div class="wrapper">
-        <header><i class="bx bx-left-arrow-alt"></i>Check your City Weather</header>
+      <header><i class="bx bx-left-arrow-alt"></i> Weather App</header>
+
       <section class="input-part">
-        
-        
-        <p>
-          <input
-            type="text"
-            placeholder="Enter City Name"
-            spellcheck="true"
-            required
-          />
-        </p>
-        <div class="separator"></div>
+        <p class="info-txt err"></p>
+        <input
+          type="text"
+          placeholder="Enter city name"
+          spellcheck="false"
+          required
+        />
+        <div class="seperator"></div>
         <button>Get Device Location</button>
       </section>
 
-      <section>
-        <img src="" alt="" />
-        <div class="">
-          <span></span>
-          <span class="">°</span>C
+      <section class="weather-part">
+        <img src="#" alt="" />
+        <div class="temp">
+          <span class="numb"> </span>
+          <span class="deg">°</span>C
         </div>
-        <div class=""></div>
-        <div class="">
-          <i></i>
-          <span></span>
+        <div class="weather"></div>
+        <div class="location">
+          <i class="bx bx-map"></i>
+          <span> </span>
         </div>
-        <div>
-          <div class="col feels"></div>
-          <div class="col humidity">
-            <i class=""></i>
-            <div class="detail">
-              <div class="detail">
-                <span class=""></span>
-                <span class="">°</span>C
+
+        <div class="bottom-details">
+          <div class="column feels">
+            <i class="bx bxs-thermometer"></i>
+
+            <div class="details">
+              <div class="temp">
+                <span class="numb numb-2"> </span>
+                <span class="deg">°</span>C
               </div>
-              <p>feels like</p>
+              <p>Feels like</p>
             </div>
           </div>
-          <div class="">
-            <i class=""></i>
-            <div class="">
-              <span class=""></span>
-              <p>humidity</p>
+
+          <div class="column humidity">
+            <i class="bx bxs-droplet-half"></i>
+            <div class="details">
+              <span class="numb"></span>
+              <p>Humidity</p>
             </div>
           </div>
         </div>
