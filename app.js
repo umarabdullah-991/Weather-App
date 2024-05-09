@@ -1,5 +1,5 @@
 //private key
-var apiKey = "758ea5a75e8983d8ae28440c59ebd530";
+var apiKey = '758ea5a75e8983d8ae28440c59ebd530';
 var api;
 
 const wrapper = document.querySelector(".wrapper"),
@@ -10,7 +10,7 @@ const wrapper = document.querySelector(".wrapper"),
   weatherIcon = document.querySelector(".weather-part img"),
   arrowBack = wrapper.querySelector("header i");
 
-inputField.addEventListener("keyup", (e) => {
+inputField.addEventListener("keyup", e => {
   //if user pressed enter button and input value is not empty
   if (e.key == "Enter" && inputField.value != "") {
     requestApi(inputField.value);
@@ -45,9 +45,7 @@ function fetchData() {
   infoTxt.classList.add("pending");
   //getting api response returning it with parsing into js obj and in another
   //then function calling weatherDetails function with passing api result as an argument.
-  fetch(api)
-    .then((response) => response.json())
-    .then((result) => weatherDetails(result));
+  fetch(api).then(response => response.json()).then(result => weatherDetails(result));
 }
 function weatherDetails(info) {
   if (info.cod == "404") {
