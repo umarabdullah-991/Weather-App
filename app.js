@@ -1,5 +1,5 @@
 //private key
-var apikey = "758ea5a75e8983d8ae28440c59ebd530";
+var apiKey = "758ea5a75e8983d8ae28440c59ebd530";
 var api;
 
 const wrapper = document.querySelector(".wrapper"),
@@ -76,9 +76,9 @@ function weatherDetails(info) {
     //let's pass these values to a particular html element
     wrapper.querySelector(".temp .numb").innerTxt = Math.floor(temp);
     wrapper.querySelector(".weather").innerTxt = description;
-    wrapper.querySelector(".location span").innerTxt = "${city}, ${country}";
+    wrapper.querySelector(".location span").innerTxt = `${city}, ${country}`;
     wrapper.querySelector(".temp .numb-2").innerTxt = feels_like;
-    wrapper.querySelector(".humidity span").innerTxt = "${humidity}%";
+    wrapper.querySelector(".humidity span").innerTxt = `${humidity}%`;
     infoTxt.classList.remove("pending", "error");
     wrapper.classList.add("active");
     console.log(info);
