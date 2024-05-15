@@ -234,6 +234,73 @@ header i{
     font-size: 1.4rem;
     margin-top: -.8rem;
 }
+.card {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	border: 1px solid #ccc;
+	padding: 20px;
+	box-shadow: 0 0 1rem #d6d3d3;
+	border-radius: 7%;
+	overflow: hidden;
+	z-index: 1000;
+	display: none;
+	text-align: left;
+	background: linear-gradient(to left, #ca67bb, #e02cc5, #38bbdf, #0635a1);
+    height: 20vh;
+    margin: 0;
+}
+#developer-card h2{
+	color: white;
+	text-decoration: none;
+
+}
+
+.developer a{
+	font-size: 1.5rem;
+	color: white;
+	text-decoration: none;
+	transition: text-decoration 0.3s ease, color 0.3s ease ;
+} 
+.developer a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.hidden {
+	display: none;
+}
+  
+.visible {
+	display: block;
+}
+.developer {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+  
+.developer-photo {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.progress-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background-color: yellow;
+	animation: progress 5s linear forwards;
+}
+  
+@keyframes progress {
+	from { width: 0; }
+	to { width: 100%; }
+}
 
 
 @media (max-width:380px){
