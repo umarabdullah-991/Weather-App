@@ -27,8 +27,9 @@ The Weather App is deployed live and can be accessed [Open Weather](<https://ope
 3. **View Weather Details:** Once the weather information is retrieved, it will be displayed on the screen, including temperature, weather condition, humidity, and feels-like temperature.
 
 **Contributors:**
-- [Syed Aman Shah](<https://github.com/amanxsyed>)
 - [Umar Abdullah](<https://github.com/umarabdullah-991>)
+- [Syed Aman Shah](<https://github.com/amanxsyed>)
+
 
 **Acknowledgments:**
 - The Weather App utilizes the OpenWeatherMap API for weather data.
